@@ -1,0 +1,44 @@
+talq (TALQ Smart City Protocol 2.x for a CMS, in Go)
+Copyright 2026 Abhinav Gautam
+
+This module is licensed under the Apache License, Version 2.0 (LICENSE).
+
+The code was written for SigmaM2M, a oneM2M platform, from the documents
+listed in PROVENANCE.md. It contains no code from other projects. The
+source files that come from SigmaM2M carry no per-file copyright header
+where that was the convention of the code they come from; the copyright
+line above covers them. Files added for this module carry "Copyright
+2026 Abhinav Gautam" and "SPDX-License-Identifier: Apache-2.0".
+
+Trademarks
+----------
+
+TALQ is a trademark of the TALQ Consortium. This module is not made,
+endorsed, certified or supported by the TALQ Consortium and is not
+affiliated with it; TALQ certification needs consortium membership and
+was not done. The name is used only to say which protocol the module
+implements.
+
+Specifications
+--------------
+
+- TALQ OpenAPI definitions 2.7.1 (CMS API, gateway API, data model),
+  github.com/TALQ-consortium/TALQ_specification, commit
+  b05f9a2c8df945fceab5f47c0ebc045724dc77e0, BSD-3-Clause (Copyright the
+  TALQ Consortium). operations_gen.go lists the operation ids, methods,
+  paths and response codes of the two API files, extracted by a script;
+  these are facts every implementation must use. No OpenAPI file and no
+  description text is included.
+- TALQ Smart City Protocol specification 2.7.1 (approved version), from
+  the same repository: used for facts only; no text is reproduced.
+
+Dependencies
+------------
+
+The Go standard library only (BSD-3-Clause, Copyright The Go Authors).
+
+Test data
+---------
+
+Every address, token, device and asset type in the tests and examples is
+made up.
